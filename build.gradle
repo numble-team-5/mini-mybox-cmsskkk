@@ -30,6 +30,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    implementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
