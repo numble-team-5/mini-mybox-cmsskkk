@@ -10,11 +10,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 import org.testcontainers.containers.MongoDBContainer;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
+@Transactional
 @ActiveProfiles("test")
 class MemberServiceImplTest {
 
@@ -38,9 +40,7 @@ class MemberServiceImplTest {
     private MemberMongoDBRepository memberMongoDBRepository;
 
     @BeforeEach
-    void setUp() {
-        memberMongoDBRepository.deleteAll();
-    }
+    void setUp() {}
 
     @Test
     @DisplayName("member 저장 기본 테스트")
