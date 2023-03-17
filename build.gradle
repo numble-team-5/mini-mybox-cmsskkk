@@ -43,6 +43,8 @@ dependencies {
     testImplementation 'org.springframework.restdocs:spring-restdocs-webtestclient'
     asciidoctorExtensions 'org.springframework.restdocs:spring-restdocs-asciidoctor'
     testImplementation 'org.springframework.security:spring-security-test'
+    testImplementation "org.testcontainers:mongodb:1.17.6"
+
 }
 
 tasks.named('test') {

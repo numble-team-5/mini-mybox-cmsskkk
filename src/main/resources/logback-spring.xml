@@ -22,10 +22,6 @@
             <appender-ref ref="CONSOLE"/>
         </logger>
 
-        <logger name="org.apache" level="INFO" additivity="false">
-            <appender-ref ref="CONSOLE"/>
-        </logger>
-
         <logger name="com.mongodb" level="DEBUG" additivity="false">
             <appender-ref ref="CONSOLE"/>
         </logger>
